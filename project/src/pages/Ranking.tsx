@@ -56,7 +56,6 @@ export function Ranking() {
     // Filtrar jugadores
     const updatedPlayers = players.filter((player) => player.id !== playerId);
 
-    // Eliminar partidos en los que participó el jugador
     const updatedMatches = matches.filter(
       (match) =>
         !match.team1.players.includes(playerId) &&
